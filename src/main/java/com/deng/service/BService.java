@@ -12,7 +12,7 @@ import com.deng.spring.Component;
 
 @Component
 public class BService {
-    @Autowired
-    public AService aService;
+//    @Autowired
+//    public AService aService;
 
 }

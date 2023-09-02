@@ -11,8 +11,8 @@ import com.deng.spring.Component;
  */
 @Component
 public class AService {
-    @Autowired
-    public BService bService;
+//    @Autowired
+//    public BService bService;
     //三级缓存
     /*
      * 第一级缓存：singletonObjects(单例池)

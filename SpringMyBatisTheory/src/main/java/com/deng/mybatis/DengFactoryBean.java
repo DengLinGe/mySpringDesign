@@ -29,7 +29,7 @@ public class DengFactoryBean implements FactoryBean {
         //终极解决思路
         /*
         * 1.需要找一个注解，扫描出所有的mapper路径，并且获得所有mapper的Class
-        * 2.例如初步解决的思路，将每一个mapper都有同样方法注册
+        * 2.利用初步解决的思路，将每一个mapper都有同样方法注册
         * */
         this.sqlSession = sqlSessionFactory.openSession();
     }

@@ -24,7 +24,8 @@ public class DengScanner extends ClassPathBeanDefinitionScanner {
     @Override
     protected Set<BeanDefinitionHolder> doScan(String... basePackages) {
         Set<BeanDefinitionHolder> beanDefinitionHolders = super.doScan(basePackages);
-
+        //basePackages为扫描的路径，即com.deng.mapper
+        //beanDefinitionHolders为spring框架帮我们扫描出来的bean定义对象，但属性不一定是正确的，需要我们修改
         for (BeanDefinitionHolder beanDefinitionHolder : beanDefinitionHolders) {
             BeanDefinition beanDefinition = beanDefinitionHolder.getBeanDefinition();
             beanDefinition.getConstructorArgumentValues().addGenericArgumentValue(beanDefinition.getBeanClassName());
